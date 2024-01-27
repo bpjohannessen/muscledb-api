@@ -12,17 +12,27 @@ const cors = require('cors');
 const app = express();
 const port = 3000 || process.env.PORT;
 const musclesRouter = require("./routes/muscles");
+const muscleRouter = require("./routes/muscle");
 
 app.use(cors({
   origin: '*'
 }));
 
 app.get('/', (req, res) => {
-  res.json({ping: "pong2"});
+  res.json({
+    package: "muscledb-api",
+    version: "1.0.0"
+  });
+});
+
+app.get('/ping', (req, res) => {
+  res.json({ping: "pong2"}); 
 });
 
 
+
 app.use("/muscles", musclesRouter);
+app.use("/muscle", muscleRouter);
 
 
 

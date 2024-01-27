@@ -1,0 +1,22 @@
+{
+  "name": "muscledb-api",
+  "version": "1.0.0",
+  "description": "API for muscledb",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpjohannessen/muscledb-api.git"
+  },
+  "author": "Bjørn-Petter Johannessen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bpjohannessen/muscledb-api/issues"
+  },
+  "homepage": "https://github.com/bpjohannessen/muscledb-api#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
